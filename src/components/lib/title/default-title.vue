@@ -61,6 +61,9 @@ export default class DefaultTitle extends Vue {
 </script>
 
 <style lang="scss" scoped>
+.default-title-component {
+  padding: 3rem 0;
+}
 .title-input-wrapper {
   input {
     width: 100%;
@@ -80,6 +83,7 @@ export default class DefaultTitle extends Vue {
 
 .text-input-wrapper {
   textarea {
+    padding: 0;
     font-size: 1.1rem;
     border: none;
     margin-block-start: 1em;

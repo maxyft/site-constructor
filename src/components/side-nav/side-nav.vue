@@ -63,7 +63,7 @@ export default class SideNav extends mixins(CommonMixin) {
 
 <style lang="scss" scoped>
 .side-nav-component {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   box-sizing: border-box;

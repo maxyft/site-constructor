@@ -1,13 +1,13 @@
 <template>
-  <div class="default-title-component" ref="component">
+  <div class="default-text-component" ref="component">
     <div
-      class="default-title-component__wrapper"
+      class="default-text-component__wrapper"
       v-if="!isEdit"
       @click="$emit('begin-edit')"
     >
       <p>{{ localText }}</p>
     </div>
-    <div class="default-title-component__wrapper" v-else>
+    <div class="default-text-component__wrapper" v-else>
       <div class="text-input-wrapper">
         <textarea
           v-model="localText"
@@ -15,7 +15,7 @@
           type="text"
           @change="
             $emit('change-content', {
-              componentType: 'title',
+              componentType: 'text',
               fieldType: 'text',
               content: localText
             })
@@ -45,7 +45,8 @@ export default class DefaultTextBlock extends Vue {
 </script>
 
 <style lang="scss" scoped>
-.default-title-component {
+.default-text-component {
+  padding: 3rem 0;
   &__wrapper {
     p {
       font-style: italic;
@@ -58,6 +59,7 @@ export default class DefaultTextBlock extends Vue {
 
 .text-input-wrapper {
   textarea {
+    padding: 0;
     border: none;
     margin-block-start: 1em;
     margin-block-end: 1em;

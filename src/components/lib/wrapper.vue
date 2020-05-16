@@ -64,7 +64,6 @@ export default class ConstructorComponentWrapper extends mixins(CommonMixin) {
 .constructor-component-wrapper {
   position: relative;
   box-sizing: border-box;
-  padding: 1rem;
   border: 1px dashed transparent;
   transition: 0.2s all;
   &:hover {
